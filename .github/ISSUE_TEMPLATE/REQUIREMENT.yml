@@ -1,0 +1,120 @@
+name: "✨ Feature Request"
+description: "Use this template for new requirements"
+title: "[require] 需求关键字"
+labels: [
+  "require"
+]
+body:
+  - type: markdown
+    attributes:
+      value: |+
+        ## Feature Request 模板
+
+        请依照该模板来提交，否则不予接受。
+        **Require提出之前请注意你看过[README](https://github.com/simscop/Requirements/#requirements)**
+  - type: input
+    id: project-name
+    attributes:
+      label: "项目名称"
+      description: 项目名称的编写应该尽可能简短且符合实际使用需求。名称只作为别名，实际推动使用项目内部代码（项目标识）。
+      placeholder: "项目名称"
+    validations:
+      required: true
+  - type: input
+    id: project-id
+    attributes:
+      label: "项目标识"
+      description: |
+        项目标识使用结构为:Group-Tag-Region-Time
+        具体使用参考[项目标识](https://github.com/simscop/Requirements/#2-%E9%A1%B9%E7%9B%AE%E6%A0%87%E8%AF%86)
+      placeholder: "000-001win64-0-20230101"
+    validations:
+      required: true
+  - type: dropdown
+    id: needs
+    attributes:
+      label: Tag
+      description:  需求类别
+      options:
+        - require
+        - bug
+        - docs
+        - invalid
+        - duplicate
+        - enhancement
+    validations:
+      required: true
+  - type: input
+    id: person
+    attributes:
+      label: "提出人"
+      placeholder: "客户甲"
+    validations:
+      required: true
+  - type: textarea
+    id: business
+    attributes:
+      label: "业务价值（选填）"
+      description: 业务价值是指一个需求、特性或项目对业务目标、客户价值和组织利益的贡献程度。它涉及了项目在经济、战略和运营方面的影响，可以是直接的、定量的效益，也可以是间接的、定性的影响。
+    validations:
+      required: false
+  - type: textarea
+    id: func
+    attributes:
+      label: "功能描述"
+      placeholder: "行为、用户界面、流程等。可以使用用例、用户故事或功能列表等方式来描述"
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: "技术要求"
+      placeholder: "性能、安全性、可扩展性等方面的需求"
+    validations:
+      required: true
+  - type: input
+    id: end_date
+    attributes:
+      label: "截止日期"
+      description: end of development
+      placeholder: "年月日"
+    validations:
+      required: false
+  - type: textarea
+    id: done
+    attributes:
+      label: "验收标准"
+      description: 具体的验收准则
+      placeholder: |
+        1. 明确的结果描述：针对每个需求，描述期望的最终结果是什么样的，以确保团队和相关利益相关者对项目的预期达成一致。
+        2. 可衡量的标准：使用具体的、可衡量的标准来描述期望的结果。这样可以使验收变得客观，避免主观判断。
+        3. 准确的量化指标：如果可能，使用数量化的指标来衡量结果。例如，处理时间、错误率、性能参数等。
+        4. 场景和用例：描述在什么情况下和如何使用特定功能。列举一些使用场景或用例，以确保涵盖了各种情况。
+        5. 边界条件：描述功能的边界条件和限制。这有助于避免误解，确保所有人对功能的限制有清楚的认识。
+        6. 用户界面和交互：如果需求涉及用户界面，描述期望的界面设计、布局、样式等。
+        7. 示例和截图：可以包含示例、流程图、界面截图等来进一步说明期望的结果。
+        8. 性能要求：如果涉及性能需求，描述预期的性能参数，例如响应时间、并发用户数等。
+        9. 兼容性和安全性：描述需求在不同平台、浏览器、设备上的兼容性，以及涉及的安全性要求。
+        10. 异常情况处理：描述当出现异常情况时，系统应如何处理和反应。
+        11. 数据和输入：描述系统应如何处理各种类型的输入数据，包括合法和非法的情况。
+        12. 测试用例：根据验收标准编写相应的测试用例，以确保项目在满足标准时能够通过测试。
+        13. 用户验收：确定哪些用户或利益相关者将参与验收过程，并确定他们是否满意。
+        14. 修复措施：描述如果某些标准没有达到，需要采取什么措施来解决问题。
+        15. 文档要求：确定相关文档或支持材料是否需要在验收前提供。
+    validations:
+      required: true
+  - type: textarea
+    id: graph
+    attributes:
+      label: "功能执行流程图（选填）"
+      description: |
+        示例参考[流程图](https://github.com/simscop/Requirements/#10%E5%8A%9F%E8%83%BD%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%9B%BE%E9%80%89%E5%A1%AB)
+    validations:
+        required: false
+  - type: textarea
+    id: attachment
+    attributes:
+      label: "附件"
+      description: 一些不在表单的需求部分，使用文档描述。
+    validations:
+        required: false
