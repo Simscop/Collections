@@ -12,6 +12,17 @@ body:
 
         请依照该模板来提交，否则不予接受。
         **Require提出之前请注意你看过[README](https://github.com/simscop/Requirements/#requirements)**
+
+  - type: checkboxes
+    id: zoho
+    attributes:
+      label: 前置阅读 | Pre-reading
+      description: 请确保你已经查看以下内容并了解后续动作。
+      options:
+        - label: "在zoho上提交申请并关联到github issue"
+          required: true
+        - label: "[README](https://github.com/simscop/Requirements/#requirements)"
+          required: true
   - type: input
     id: project-name
     attributes:
