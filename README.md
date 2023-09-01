@@ -1,6 +1,6 @@
 # Collections
 
-公司内部任务收集项目，包括bug、require、invalid等。
+公司内部任务收集仓库，包括bug、require、invalid等。
 
 ## Requirements
 
