@@ -1,4 +1,8 @@
-##Requirements
+# Collections
+
+公司内部任务收集项目，包括bug、require、invalid等。
+
+## Requirements
 
 需求收集
 
